@@ -33,6 +33,7 @@ public class BeerControllerV2 {
 
     @PostMapping // POST - create new beer
     public ResponseEntity handlePost(@Valid @RequestBody BeerDtoV2 beerDto){
+
         BeerDtoV2 savedDto = beerServiceV2.saveNewBeer(beerDto);
 
         HttpHeaders headers = new HttpHeaders();
@@ -57,18 +58,6 @@ public class BeerControllerV2 {
     }
 
 
-    @ExceptionHandler(NullPointerException.class)
-    public String npeErrorHandler(ConstraintViolationException e){
-    	return "Bad requestttt";
-//        List<String> errors = new ArrayList<>(e.getConstraintViolations().size());
-//
-//        e.getConstraintViolations().forEach(constraintViolation -> {
-//            errors.add(constraintViolation.getPropertyPath() + " : " + constraintViolation.getMessage());
-//        });
-//
-//        return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
-    }
-    
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<List> validationErrorHandler(ConstraintViolationException e){
         List<String> errors = new ArrayList<>(e.getConstraintViolations().size());
@@ -79,7 +68,4 @@ public class BeerControllerV2 {
 
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
-    
-    
-   
 }
