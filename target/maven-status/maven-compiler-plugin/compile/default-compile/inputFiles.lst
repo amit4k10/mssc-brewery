@@ -8,7 +8,9 @@ C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframewo
 C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\services\CustomerService.java
 C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\web\model\v2\BeerStyleEnum.java
 C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\services\BeerService.java
+C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\web\mappers\CustomerMapper.java
 C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\web\controller\CustomerController.java
+C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\domain\Customer.java
 C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\web\model\BeerDto.java
 C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\web\controller\MvcExceptionHandler.java
 C:\Books\MicroserviceGuru\Monolith\mssc-brewery\src\main\java\guru\springframework\msscbrewery\services\CustomerServiceImpl.java
